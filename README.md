@@ -52,7 +52,7 @@ yang dapat dibaca dan dipahami manusia*, umumnya sebagai teks biasa (pada
 umumnya dalam format UTF-8 atau UTF-16).
 
 **UTF-8, Unicode (Universal Coded Character Set) Transformation Format - 8-bit**:
-sebuah *format pengkodean karakter* dalam lebar variabel bervariasi satu sampai
+sebuah *format pengkodean karakter* dalam lebar variabel dengan variasi satu sampai
 empat bita (8 bit) yang digunakan dalam komunikasi elektronik.
 
 **Universal Coded Character Set**: sebuah *standar teknologi informasi
