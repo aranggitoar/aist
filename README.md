@@ -10,7 +10,7 @@ format digital Alkitab interlinear dalam dua bentuk: (1) ringan secara
 komputasi, (2) jelas dan mudah dipahami.
 
 
-## SUMBER
+## **Sumber**
 1. Teks Yunani: [Perjanjian Baru Yunani Mayoritas
    Bizantium](https://github/byztxt/byzantine-majority-text) (Byzantine
    Majority Greek New Testament) oleh Robinson dan Pierpoint.
@@ -21,7 +21,7 @@ komputasi, (2) jelas dan mudah dipahami.
    morfologi.
 
 
-## TUJUAN
+## **Tujuan**
 1. Menyediakan terjemahan interlinear sumber terbuka dalam berbagai format
    dalam bahasa Indonesia.
 2. Memudahkan akses orang Indonesia kepada terjemahan interlinear sumber
@@ -33,7 +33,7 @@ Semua orang berhak mengakses Alkitab dalam bahasa aslinya dengan mudah dan
 Tuhan Yesus menghendaki semua orang untuk mengenal-Nya dengan benar.
 
 
-## LANGKAH-LANGKAH
+## **Langkah-Langkah**
 Untuk mencapai kemudahan akses dalam berbagai format, diperlukan:
 - [ ] Sebuah format interlinear dalam dua bentuk: (1) kecil dalam ukuran file
      dan (2) jelas serta mudah dibaca.
@@ -43,17 +43,33 @@ Untuk mencapai kemudahan akses dalam berbagai format, diperlukan:
 - [ ] Sebuah templat penggunaan format ini dalam sebuah aplikasi web.
 
 
-## KAMUS BAHASA TEKNIS
+## **Kamus Bahasa Teknis**
+**Interlinear**: secara harafiah, menurut kamus Merriam-Webster, "dimasukkan di
+antara baris yang telah ditulis atau dicetak" atau "ditulis atau dicetak dalam
+bahasa yang berbeda atau teks yang bergantian dalam baris-baris yang
+berurutan". Dalam dunia penerjemahan Alkitab, interlinear berarti sebuah *teks
+terjemahan harafiah atau konsisten secara harafiah yang lengkap penomoran
+strong, teks bahasa asli, dan kode morfologi bahasa asli dalam satu baris*.
+
 **Sumber Terbuka**: kode sumber yang dibuat *tersedia untuk diubah dan
 didistribusikan* secara bebas.
 
 **Kode Sumber**: sebuah *koleksi kode, ditulis dalam bahasa pemrograman tertentu
 yang dapat dibaca dan dipahami manusia*, umumnya sebagai teks biasa (pada
-umumnya dalam format UTF-8 atau UTF-16).
+umumnya dalam format UTF-8 atau UTF-16). Karena teks Alkitab ini tersedia
+sebagai teks biasa dalam bahasa pemrograman tertentu yang dapat dibaca dan
+dipahami, maka ia terhitung sebagai sebuah kode sumber.
 
-**UTF-8, Unicode (Universal Coded Character Set) Transformation Format - 8-bit**:
-sebuah *format pengkodean karakter* dalam lebar variabel dengan variasi satu sampai
-empat bita (8 bit) yang digunakan dalam komunikasi elektronik.
+**Bahasa Pemrograman**: sebuah bahasa formal yang terdiri dari sekumpulan kata
+yang menghasilkan berbagai bentuk keluaran kode mesin.
+
+**Bahasa Formal**: terdiri dari kata-kata yang abjadnya diambil dari sebuah
+alfabet dan dibentuk dengan baik menurut sekumpulan peraturan tertentu.
+
+**UTF-8, Unicode (Universal Coded Character Set) Transformation Format -
+8-bit**: sebuah *format pengkodean karakter* dalam lebar variabel dengan
+variasi satu sampai empat bita (8 bit) yang digunakan dalam komunikasi
+elektronik.
 
 **Universal Coded Character Set**: sebuah *standar teknologi informasi
 untuk pengkodean, representasi, dan penanganan teks* yang diekspresikan dalam
