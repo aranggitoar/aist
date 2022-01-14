@@ -47,13 +47,13 @@ const uploadRequestHandler: React.FC<PropsUpdate> = ({updateUploadedBible, child
         bibleBookName = 'Matthew';
       }
 
-      if (fileObject[bibleBookName][0][0].length === 3) {
-        populateWithEmptyTargetLanguage(fileObject);
-      }
+      // if (fileObject[bibleBookName][0][0].length === 3) {
+      //   populateWithEmptyTargetLanguage(fileObject);
+      // }
 
       // @ts-ignore // the element exists
       const newUploadedFile: ILoadedBible = {
-        ['bibleObject']: fileObject,
+        ['bibleObject']: populateWithEmptyTargetLanguage(fileObject),
         ['chosenBibleSourceName']: fileName,
         ['chosenBibleBookNames']: bibleBookNames,
         ['chosenBibleBookDetails']: [bibleBookName, '0', '0']
