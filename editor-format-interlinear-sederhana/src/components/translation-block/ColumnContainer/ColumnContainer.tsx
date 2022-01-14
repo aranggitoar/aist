@@ -50,14 +50,17 @@ function rowContentsGenerator(sourceData: Array<Array<string>>, index: number, b
   }
   console.log(sourceData[4]);
 
-  markup = '<div class="row-target-language row-container">' +
+  markup = '<div class="row-strongs row-container">' + sourceData[2][index] + '</div>';
+
+  markup += '<div class="row-original-language row-container">' + sourceData[1][index] + '</div>'
+
+  markup += '<div class="row-target-language row-container">' +
     ReactDOMServer.renderToStaticMarkup(
       <TextField id={targetLanguageID} value={sourceData[0][index]} onChange={
         (e) => {updateTranslation(e, [bibleObject, sourceData[4]], updateUploadedBible)}
       } />
     ) + '</div>';
-  markup += '<div class="row-original-language row-container">' + sourceData[1][index] + '</div>'
-  markup += '<div class="row-strongs row-container">' + sourceData[2][index] + '</div>'
+
   markup += '<div class="row-morphology row-container">' + sourceData[3][index] + '</div>'
 
   return markup;
