@@ -34,7 +34,9 @@ const updateChapterIndex = (e: React.FormEvent<HTMLSelectElement>, oldBible: ILo
   // Also update the target language.
   updateTranslation(oldBible.bibleObject, oldBible.chosenBibleBookDetails);
 
-  oldBible.chosenBibleBookDetails[1] = e.currentTarget.value;
+  oldBible.chosenBibleBookDetails[1] = e.currentTarget.value as string;
+  // Reset the verse index.
+  oldBible.chosenBibleBookDetails[2] = '0' as string;
 
   const newBible: ILoadedBible = {
     ['bibleObject']: oldBible.bibleObject,
