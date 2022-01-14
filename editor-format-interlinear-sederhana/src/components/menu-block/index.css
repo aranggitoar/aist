@@ -1,8 +1,13 @@
 .menu-items {
+  background: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: .75em 2em;
+  padding: .5em;
+}
+
+.menu-items:hover {
+  background: none;
 }
 
 .menu-items label,
@@ -18,9 +23,9 @@
 }
 
 .menu-items button:hover {
-  background-color: initial !important;
-  background-image: radial-gradient(rgb(243, 242, 241), rgb(255, 255, 255));
-  transform: translateY(-3px);
+  background: none;
+  background-image: radial-gradient(rgb(250, 249, 248), rgb(255, 255, 255));
+  transform: translateY(-2px);
 }
 
 #menu-load-file input,
@@ -43,6 +48,6 @@
   width: 100%;
 }
 
-#loaded-file-name {
-  padding: .5em 0;
+#menu-save-file {
+  padding: 0;
 }

@@ -13,13 +13,14 @@ const Container = styled.div`
   align-items: center;
   margin: auto;
   height: 100%;
-  padding: 2rem;
+  padding: 0 2em;
 `;
 
 const Separator = styled.hr`
-  box-shadow: 20px 20px 150px 1px;
-  margin: 2em 0;
-  width: 65%;
+  border: .25px solid #777;
+  box-shadow: 20px 20px 250px 1px;
+  margin: .25em 0 2em;
+  width: 35%;
 `;
 
 export function App(): React.ReactElement<Record<string, unknown>> {
@@ -27,7 +28,6 @@ export function App(): React.ReactElement<Record<string, unknown>> {
     <Container id="app">
       <LoadedBibleProvider>
         <MenuBlock />
-        <Separator />
         <PickerBlock />
         <Separator />
         <TranslationBlock />

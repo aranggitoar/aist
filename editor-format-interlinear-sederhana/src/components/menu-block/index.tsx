@@ -9,10 +9,12 @@ import { LoadedBibleContext } from '@/contexts/LoadedBibleContext';
 import './index.css';
 
 const Block = styled.div`
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: flex-start;
+  padding: 0 rem;
+  width: 100%;
 `;
 
 export function MenuBlock(): React.ReactElement<Record<string, unknown>> {
