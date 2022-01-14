@@ -8,36 +8,16 @@ import { getOriginalWords } from '@/utilities/getOriginalWords';
 import { getStrongs } from '@/utilities/getStrongs';
 import { getMorphologies } from '@/utilities/getMorphologies';
 
+import { filterDisplayedStrongsData } from '@/utilities/filterDisplayedStrongsData';
+import { filterDisplayedOriginalLanguage } from '@/utilities/filterDisplayedOriginalLanguage';
+import { filterDisplayedMorphologicalData } from '@/utilities/filterDisplayedMorphologicalData';
+
 type Props = {
   loadedBibleObject: ILoadedBible,
   updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void
 }
 
-const updateTranslation = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, bibleObjectAndDetails: Array<ILoadedBible | Array<string>>, updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void) => {
-  let newTargetWord = e.currentTarget.value;
-  let oldBible = bibleObjectAndDetails[0] as ILoadedBible;
-  let wordLocationInOldBible = bibleObjectAndDetails[1];
-
-  let bibleBookName = wordLocationInOldBible[0],
-      chapterIndex = wordLocationInOldBible[1],
-      verseIndex = wordLocationInOldBible[2],
-      wordIndex = wordLocationInOldBible[3];
-
-  // @ Insert the new word.
-  // This assumes that the first array of the word component array is correctly arranged by populateWithEmptyTargetLanguage function.
-  oldBible.bibleObject[bibleBookName][chapterIndex][verseIndex][wordIndex][0] = newTargetWord;
-
-  const newBible: ILoadedBible = {
-    ['bibleObject']: oldBible.bibleObject,
-    ['chosenBibleSourceName']: oldBible.chosenBibleSourceName,
-    ['chosenBibleBookNames']: oldBible.chosenBibleBookNames,
-    ['chosenBibleBookDetails']: oldBible.chosenBibleBookDetails
-  }
-
-  updateUploadedBible(newBible)
-}
-
-function rowContentsGenerator(sourceData: Array<Array<string>>, index: number, bibleObject: ILoadedBible, updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void) {
+function rowContentsGenerator(sourceData: Array<Array<string>>, index: number) {
   // Prepare markup.
   let markup = '';
   // Prepare translation index identification.
@@ -48,30 +28,27 @@ function rowContentsGenerator(sourceData: Array<Array<string>>, index: number, b
   } else {
     sourceData[4][3] = index as unknown as string;
   }
-  console.log(sourceData[4]);
 
-  markup = '<div class="row-strongs row-container">' + sourceData[2][index] + '</div>';
+  markup = '<div class="row-strongs row-container">' + filterDisplayedStrongsData(sourceData[2][index]) + '</div>';
 
-  markup += '<div class="row-original-language row-container">' + sourceData[1][index] + '</div>'
+  markup += '<div class="row-original-language row-container">' + filterDisplayedOriginalLanguage(sourceData[1][index]) + '</div>'
 
   markup += '<div class="row-target-language row-container">' +
     ReactDOMServer.renderToStaticMarkup(
-      <TextField id={targetLanguageID} value={sourceData[0][index]} onChange={
-        (e) => {updateTranslation(e, [bibleObject, sourceData[4]], updateUploadedBible)}
-      } />
+      <TextField id={targetLanguageID} value={sourceData[0][index]} />
     ) + '</div>';
 
-  markup += '<div class="row-morphology row-container">' + sourceData[3][index] + '</div>'
+  markup += '<div class="row-morphology row-container">' + filterDisplayedMorphologicalData(sourceData[3][index]) + '</div>'
 
   return markup;
 }
 
-function columnContainerGenerator(sourceData: Array<Array<string>>,
-count: number, bibleObject: ILoadedBible, updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void) {
+function columnContainerGenerator(sourceData: Array<Array<string>>, count: number) {
   let markup = '';
-  for (let i:number = 0; i < count; i++) {
+  // In reverse because it is only for translation Old Testament for now.
+  for (let i = count - 1; i >= 0; i--) {
     let columnId = "column-" + i as string;
-    markup += `<div id=${columnId}>${rowContentsGenerator(sourceData, i, bibleObject, updateUploadedBible)}</div>`
+    markup += `<div id=${columnId}>${rowContentsGenerator(sourceData, i)}</div>`
   }
   return markup;
 }
@@ -113,7 +90,6 @@ function dataAssembler(bibleObjectCopy: ILoadedBible, updateUploadedBible: (newl
 
     stringOfChosenVerseContents = arrayOfChosenVerseContents.toString();
     arrayOfChosenVerseContents = stringOfChosenVerseContents.split(',')
-    console.log(arrayOfChosenVerseContents)
 
 
     // Get parts of the loaded Bible object.
@@ -131,11 +107,9 @@ function dataAssembler(bibleObjectCopy: ILoadedBible, updateUploadedBible: (newl
       arrayOfMorphologies,
       chosenBibleBookDetails
     ]
-    console.log(arrayOfWordComponents)
-    console.log(arrayOfSourceData);
   }
   
-  return columnContainerGenerator(arrayOfSourceData, arrayOfStrongs.length, bibleObjectCopy, updateUploadedBible)
+  return columnContainerGenerator(arrayOfSourceData, arrayOfStrongs.length)
 }
 
 const TranslationBlockColumnContainer: React.FC<Props> = ({loadedBibleObject, updateUploadedBible}) => {
