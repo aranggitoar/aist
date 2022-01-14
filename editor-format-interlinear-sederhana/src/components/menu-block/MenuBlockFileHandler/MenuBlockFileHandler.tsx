@@ -38,6 +38,7 @@ const uploadRequestHandler: React.FC<PropsUpdate> = ({updateUploadedBible, child
       // @ts-ignore // the property exists
       const fileObject = Object.assign(JSON.parse(e2.currentTarget.result));
       const bibleBookNames = Object.keys(fileObject);
+      let updatedFileObject = fileObject;
 
       // Check which book exists.
       let bibleBookName: string;
@@ -47,13 +48,13 @@ const uploadRequestHandler: React.FC<PropsUpdate> = ({updateUploadedBible, child
         bibleBookName = 'Matthew';
       }
 
-      // if (fileObject[bibleBookName][0][0].length === 3) {
-      //   populateWithEmptyTargetLanguage(fileObject);
-      // }
+      if (fileObject[bibleBookName][0][0][0].length === 3) {
+        updatedFileObject = populateWithEmptyTargetLanguage(fileObject);
+      }
 
       // @ts-ignore // the element exists
       const newUploadedFile: ILoadedBible = {
-        ['bibleObject']: populateWithEmptyTargetLanguage(fileObject),
+        ['bibleObject']: updatedFileObject,
         ['chosenBibleSourceName']: fileName,
         ['chosenBibleBookNames']: bibleBookNames,
         ['chosenBibleBookDetails']: [bibleBookName, '0', '0']
