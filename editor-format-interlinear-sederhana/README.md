@@ -8,17 +8,20 @@ Karena aplikasi ini diperlukan secara darurat dan harus portabel, maka digunakan
 
 ## **Fungsionalitas**
 Karena aplikasi ini diperlukan secara darurat, maka fungsionalitas akan ditambahkan secara bertahap.
-_Tahap I_
+
+_Tahap I_ (**OK**)
 1. Memasukkan padanan dari setiap kata dalam bahasa asli.
-2. Menyimpan dan membuka file dalam direktori tertentu dengan format Windows.
-3. Penyimpanan otomatis setiap selesai satu ayat.
+2. Menyimpan dan membuka file JSON dalam direktori tertentu.
+3. Penyimpanan otomatis setiap pindah ayat, pasal, atau buku.
+
 _Tahap II_
-4. Menampilkan satu ayat atau pasal untuk diterjemahkan.
-5. Penyimpanan otomatis dalam thread yang berbeda. (Mungkin tidak diperlukan karena operasi cukup ringan.)
-6. Mengubah ukuran font.
-7. Pengaturan lama penyimpanan otomatis.
+1. Menampilkan satu ayat atau pasal untuk diterjemahkan.
+2. Mengubah ukuran font.
+3. Pengaturan lama penyimpanan otomatis.
+
 _Tahap III_
-8. Mengenali file yang diedit sebagai satu kitab atau sekumpulan kitab.
+1. Mengenali file yang diedit sebagai satu kitab atau sekumpulan kitab.
+2. Keterangan tentang akar dan keluarga dari sebuah data Strongs.
 
 
 ## **Pengembangan atau Perbaikan**
