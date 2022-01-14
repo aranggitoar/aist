@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+import { getTranslationResult } from '@/utilities/getTranslationResult';
+import { storeTranslationResult } from '@/utilities/storeTranslationResult';
+
 type Props = {
   loadedBibleObject: ILoadedBible,
   updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void
@@ -19,9 +22,17 @@ function createBibleBookPicker(bibleBookNameList: Array<string>, selectedBibleBo
   return markup;
 }
 
+const updateTranslation = (bibleObject: Object, chosenBibleBookDetails: Array<string>):void => {
+  let newTranslationData = getTranslationResult(document.getElementsByClassName('row-target-language').length);
+  bibleObject = storeTranslationResult(bibleObject, chosenBibleBookDetails, newTranslationData)
+}
+
 const updateBibleBookName = (e: React.FormEvent<HTMLSelectElement>, oldBible: ILoadedBible,
   updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void): void => {
   e.preventDefault();
+
+  // Also update the target language.
+  updateTranslation(oldBible.bibleObject, oldBible.chosenBibleBookDetails);
 
   oldBible.chosenBibleBookDetails[0] = e.currentTarget.value;
   oldBible.chosenBibleBookDetails[1] = '0';

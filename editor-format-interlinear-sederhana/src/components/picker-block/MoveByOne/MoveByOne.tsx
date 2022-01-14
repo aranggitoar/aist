@@ -9,6 +9,11 @@ type Props = {
   updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void
 }
 
+const updateTranslation = (bibleObject: Object, chosenBibleBookDetails: Array<string>):void => {
+  let newTranslationData = getTranslationResult(document.getElementsByClassName('row-target-language').length);
+  bibleObject = storeTranslationResult(bibleObject, chosenBibleBookDetails, newTranslationData)
+}
+
 // @ts-ignore // the type exists
 const updateVerseIndex = (e: React.MouseEvent<Button>, oldBible: ILoadedBible,
   updateUploadedBible: (newlyLoadedBibleObject: ILoadedBible) => void): void => {
@@ -27,12 +32,9 @@ const updateVerseIndex = (e: React.MouseEvent<Button>, oldBible: ILoadedBible,
   let tempValue = oldValue as number;
   let newValue: unknown;
 
-  let newTranslationData = getTranslationResult(document.getElementsByClassName('row-target-language').length);
+  // Also update the target language.
+  updateTranslation(oldBible.bibleObject, oldBible.chosenBibleBookDetails);
 
-  oldBible.bibleObject = storeTranslationResult(oldBible.bibleObject, oldBible.chosenBibleBookDetails, newTranslationData)
-
-  console.log(tempValue);
-  console.log(maxValue);
   if (e.currentTarget.id === "forward" && tempValue < maxValue) {
     tempValue++;
   } else if (e.currentTarget.id === "backward" && tempValue > 0) {
@@ -50,6 +52,7 @@ const updateVerseIndex = (e: React.MouseEvent<Button>, oldBible: ILoadedBible,
     ['chosenBibleBookDetails']: oldBible.chosenBibleBookDetails
   }
 
+  // Change the current picker value.
   // @ts-ignore // the property exists
   document.getElementById('verse-picker').value = oldBible.chosenBibleBookDetails[2];
 
