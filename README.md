@@ -40,7 +40,10 @@ Tuhan Yesus menghendaki semua orang untuk mengenal-Nya dengan benar.
 Untuk mencapai kemudahan akses dalam berbagai format, diperlukan hal-hal berikut:
 - [ ] Sebuah format interlinear dalam dua bentuk: (1) kecil dalam ukuran file
   dan (2) jelas serta mudah dimengerti.
-- [x] Sebuah alat untuk menerjemahkan teks asli ke dalam bahasa target.
+- [x] Sebuah alat untuk menerjemahkan teks asli ke dalam bahasa target sebagai
+  aplikasi desktop dan aplikasi web. Sudah siap digunakan, [repositori kode
+  sumber](https://github.com/benihyangbaik/interlinear-bible-simple-editor),
+  [aplikasi web](https://ibse.benihyangbaik.com).
 - [ ] Sebuah alat untuk menampilkan format ini dalam sebuah aplikasi web.
 - [ ] Sebuah alat konversi format interlinear bentuk (1) ke bentuk (2) dan
   sebaliknya, dan nantinya format-format lain bila diperlukan.

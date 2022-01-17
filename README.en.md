@@ -39,7 +39,10 @@ and Lord Jesus desires for everyone to know Him as He is.
 To reach easy accessibility in various formats, the following are necessary:
 - [ ] An interlinear format in two forms: (1) small in file size and (2) clear
   and easy to understand.
-- [x] A tool to translate the original text to the target language.
+- [x] A tool to translate the original text to the target language as a desktop
+  application and web application. Ready to use [source code
+  repository](https://github.com/benihyangbaik/interlinear-bible-simple-editor),
+  [web application](https://ibse.benihyangbaik.com).
 - [ ] A tool to display this format in a web application.
 - [ ] A tool to convert interlinear format (1) to (2) and vice versa, and later
   other formats if necessary.
