@@ -1,4 +1,6 @@
 # **Alkitab Sumber Terbuka (Yunani/Ibrani-Indonesia) Interlinear**
+Read in [Indonesian](https://github.com/benihyangbaik/asti#readme), [English](https://github.com/benihyangbaik/asti/blob/main/README.en.md), [Brazillian Portuguese](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md).
+
 *Alkitab Sumber Terbuka (Yunani/Ibrani-Indonesia) Interlinear* (**ASTI**)
 adalah proyek untuk menyediakan terjemahan interlinear sumber terbuka dalam
 bahasa Indonesia yang mudah diakses dan didistribusikan secara bebas oleh Benih
