@@ -2,25 +2,70 @@
 *Read in [Indonesian](https://github.com/benihyangbaik/asti#readme), [English](https://github.com/benihyangbaik/asti/blob/main/README.en.md), [Brazillian Portuguese](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md).*
 
 *Bíblia de Código Aberto Interlinear* (*Alkitab Sumber Terbuka Interlinear*,
-**ASTI**) é um projeto para fornecer Antigo Testamento e do Novo Testamento
-interlinear Bíblia em idioma indonésio de fácil acesso e distribuição gratuita
-por Benih Yang Baik.
+**ASTI**) é um projeto organizado por Benih Yang Baik para facilitar o acesso e
+fornecer acesso gratuito a Bíblia Interlinear de língua indonésia para todas as
+congregações de língua indonésia.
+
+AIST pode ser citado, usado livremente, com atribuição a [Benih Yang
+Baik](https://benihyangbaik.com).
 
 
 ## **Bíblia Interlinear em Formato Digital**
 Ao mesmo tempo, porque não existe um padrão conhecido para um formato digital de
 Bíblia interlinear, ASTI também fornece e propague o uso de uma Bíblia interlinear
-formato digital em duas formas: (1) barato para computar, (2) claro e fácil de
-compreender.
+formato digital em duas formas: (1) *computacionalmente barato*, (2) *claro e fácil de
+compreender*.
+
+### **Computacionalmente Barato**
+O formato (1) é o formato [Hebraico Bíblia do Open
+Scriptures](https://github.com/openscriptures/morphhb) (Open Scriptures Hebrew
+Bible, OSHB) com pequenas modificações. Ou seja, um ponto de dados adicional na
+frente do ponto de dados do idioma nativo. Exemplo:
+
+**Formato OSHB Original**
+```json
+{
+  "Genesis": [
+    [
+      [
+        ["ב/ראשית","Hb/H7225","HR/Ncfsa"],
+        ["ברא","H1254","HVqp3ms"],
+        ["אלהים","H430","HNcmpa"],
+        ["את","H853","HTo"],
+        ["ה/שמים","Hd/H8064","HTd/Ncmpa"],
+        ["ו/את","Hc/H853","HC/To"],
+        ["ה/ארץ","Hd/H776","HTd/Ncbsa"]
+      ]
+    ]
+  ]
+}
+```
+
+**Formato OSHB Modificado**
+```json
+{
+  "Genesis": [
+    [
+      [
+        ["Pada mulanya","ב/ראשית","Hb/H7225","HR/Ncfsa"],
+        ["menciptakan","ברא","H1254","HVqp3ms"],
+        ["Allah","אלהים","H430","HNcmpa"],
+        ["-","את","H853","HTo"],
+        ["surga","ה/שמים","Hd/H8064","HTd/Ncmpa"],
+        ["dan","ו/את","Hc/H853","HC/To"],
+        ["bumi","ה/ארץ","Hd/H776","HTd/Ncbsa"]
+      ]
+    ]
+  ]
+}
+```
 
 
 ## **Fonte**
 1. Texto Grego: [Maioria Bizantina Grego Novo
    Testamento](https://github/byztxt/byzantine-majority-text) (Byzantine
    Majority Greek New Testament) por Robinson e Pierpoint.
-2. Texto Hebraico: [Hebraico Bíblia do Open
-   Scriptures](https://github.com/openscriptures/morphhb) (Open Scriptures
-   Hebrew Bible, OSHB) por Open Scriptures, Códice de Leningrado Westminster
+2. Texto Hebraico: OSHB por Open Scriptures, Códice de Leningrado Westminster
    (Leningrad Westminster Codex).
 
 
@@ -47,3 +92,15 @@ Para alcançar fácil acessibilidade em vários formatos, são necessários:
 - [ ] Uma ferramenta para exibir esse formato em um aplicativo da web.
 - [ ] Uma ferramenta para converter o formato interlinear (1) para (2) e vice-versa, e mais tarde
   outros formatos, se necessário.
+
+
+## **Desenvolvimento**
+- A ferramenta de tradução está pronta para uso, mas ainda faltam alguns
+  recursos.
+- O formato interlinear computacionalmente barato está pronto para uso, [confira
+  acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#computationalmente-barato) e o
+  livro de Gênesis está sendo traduzido.
+- O texto bizantino está em processo de conversão, das versões *analisada* e
+  *CSV-Unicode* no repositório já mencionado
+  [acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#fonte). Isso foi adiado até
+  meados de fevereiro de 2022, a menos que alguém contribuísse.

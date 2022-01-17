@@ -1,25 +1,71 @@
-# **Alkitab Sumber Terbuka (Yunani/Ibrani-Indonesia) Interlinear**
+# **Alkitab Interlinear Sumber Terbuka (Yunani/Ibrani-Indonesia)**
 *Read in [Indonesian](https://github.com/benihyangbaik/asti#readme), [English](https://github.com/benihyangbaik/asti/blob/main/README.en.md), [Brazillian Portuguese](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md).*
 
-*Alkitab Sumber Terbuka Interlinear* (**ASTI**) adalah proyek untuk menyediakan
-Alkitab Perjanjian Lama dan Perjanjian Baru interlinear dalam bahasa Indonesia
-yang mudah diakses dan didistribusikan secara bebas oleh Benih Yang Baik.
+*Alkitab Interlinear Sumber Terbuka* (**AIST**) merupakan sebuah proyek yang
+diadakan oleh Benih Yang Baik untuk memudahkan akses Alkitab Interlinear dalam
+bahasa Indonesia kepada seluruh jemaat berbahasa Indonesia.
+
+AIST dapat dikutip, digunakan secara bebas, dengan memberikan atribusi kepada
+[Benih Yang Baik](https://benihyangbaik.com).
 
 
 ## **Alkitab Interlinear dalam Format Digital**
 Pada waktu yang sama, karena belum ada standar format digital tertentu untuk
 Alkitab interlinear, ASTI juga menyediakan dan menyebarluaskan penggunaan
-sebuah format digital Alkitab interlinear dalam dua bentuk: (1) ringan secara
-komputasi, (2) jelas dan mudah dimengerti.
+sebuah format digital Alkitab interlinear dalam dua bentuk: (1) *ringan secara
+komputasi*, (2) *jelas dan mudah dimengerti*.
+
+
+### **Ringan Secara Komputasi**
+Bentuk (1) adalah format [Alkitab Ibrani Open
+Scriptures](https://github.com/openscriptures/morphhb) (Open Scriptures Hebrew
+Bible, OSHB) dengan sedikit modifikasi. Yaitu tambahan satu poin data di depan
+poin data bahasa asli. Contoh:
+
+**Format OSHB Asli**
+```json
+{
+  "Genesis": [
+    [
+      [
+        ["ב/ראשית","Hb/H7225","HR/Ncfsa"],
+        ["ברא","H1254","HVqp3ms"],
+        ["אלהים","H430","HNcmpa"],
+        ["את","H853","HTo"],
+        ["ה/שמים","Hd/H8064","HTd/Ncmpa"],
+        ["ו/את","Hc/H853","HC/To"],
+        ["ה/ארץ","Hd/H776","HTd/Ncbsa"]
+      ]
+    ]
+  ]
+}
+```
+
+**Format OSHB Dimodifikasi**
+```json
+{
+  "Genesis": [
+    [
+      [
+        ["Pada mulanya","ב/ראשית","Hb/H7225","HR/Ncfsa"],
+        ["menciptakan","ברא","H1254","HVqp3ms"],
+        ["Allah","אלהים","H430","HNcmpa"],
+        ["-","את","H853","HTo"],
+        ["surga","ה/שמים","Hd/H8064","HTd/Ncmpa"],
+        ["dan","ו/את","Hc/H853","HC/To"],
+        ["bumi","ה/ארץ","Hd/H776","HTd/Ncbsa"]
+      ]
+    ]
+  ]
+}
+```
 
 
 ## **Sumber**
 1. Teks Yunani: [Perjanjian Baru Yunani Mayoritas
    Bizantium](https://github/byztxt/byzantine-majority-text) (Byzantine
    Majority Greek New Testament) oleh Robinson dan Pierpoint.
-2. Teks Ibrani: [Alkitab Ibrani Open
-   Scriptures](https://github.com/openscriptures/morphhb) (Open Scriptures
-   Hebrew Bible, OSHB) oleh Open Scriptures, Kodeks Leningrad Westminster
+2. Teks Ibrani: OSHB oleh Open Scriptures, Kodeks Leningrad Westminster
    (Leningrad Westminster Codex).
 
 
@@ -47,6 +93,17 @@ Untuk mencapai kemudahan akses dalam berbagai format, diperlukan hal-hal berikut
 - [ ] Sebuah alat untuk menampilkan format ini dalam sebuah aplikasi web.
 - [ ] Sebuah alat konversi format interlinear bentuk (1) ke bentuk (2) dan
   sebaliknya, dan nantinya format-format lain bila diperlukan.
+
+
+## **Perkembangan**
+- Alat penerjemahan sudah siap digunakan, namun masih ada beberapa fitur yang kurang.
+- Format interlinear yang ringan secara komputasi sudah siap digunakan, [cek
+  atas](https://github.com/benihyangbaik/asti#ringan-secara-komputasi)
+  dan Kitab Kejadian sedang diterjemahkan.
+- Teks Byzantine sedang dalam proses konversi, dari versi *parsed* dan
+  *CSV-Unicode* dalam repositori yang sudah disebutkan [di
+  atas](https://github.com/benihyangbaik/asti#sumber). Ini ditunda hingga
+  pertengahan Februari 2022, kecuali seseorang berkontribusi.
 
 
 ## **Kamus Bahasa Teknis**
