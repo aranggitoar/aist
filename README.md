@@ -8,8 +8,8 @@ yang mudah diakses dan didistribusikan secara bebas oleh Benih Yang Baik.
 
 ## **Alkitab Interlinear dalam Format Digital**
 Pada waktu yang sama, karena belum ada standar format digital tertentu untuk
-Alkitab interlinear, ASTI juga menyediakan dan menganjurkan penggunaan sebuah
-format digital Alkitab interlinear dalam dua bentuk: (1) ringan secara
+Alkitab interlinear, ASTI juga menyediakan dan menyebarluaskan penggunaan
+sebuah format digital Alkitab interlinear dalam dua bentuk: (1) ringan secara
 komputasi, (2) jelas dan mudah dimengerti.
 
 
@@ -41,8 +41,8 @@ Untuk mencapai kemudahan akses dalam berbagai format, diperlukan hal-hal berikut
 - [ ] Sebuah format interlinear dalam dua bentuk: (1) kecil dalam ukuran file
   dan (2) jelas serta mudah dimengerti.
 - [x] Sebuah alat untuk menerjemahkan teks asli ke dalam bahasa target sebagai
-  aplikasi desktop dan aplikasi web. Sudah siap digunakan, [repositori kode
-  sumber](https://github.com/benihyangbaik/interlinear-bible-simple-editor),
+  aplikasi desktop dan aplikasi web. Sekarang sudah siap digunakan: [repositori
+  kode sumber](https://github.com/benihyangbaik/interlinear-bible-simple-editor),
   [aplikasi web](https://ibse.benihyangbaik.com).
 - [ ] Sebuah alat untuk menampilkan format ini dalam sebuah aplikasi web.
 - [ ] Sebuah alat konversi format interlinear bentuk (1) ke bentuk (2) dan

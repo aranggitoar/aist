@@ -9,7 +9,7 @@ Benih Yang Baik.
 
 ## **Interlinear Bible in Digital Format**
 At the same time, because there exist no known standard for a digital format of
-interlinear Bible, ASTI also provides and advocates use of a interlinear Bible
+interlinear Bible, ASTI also provides and spread the use of a interlinear Bible
 digital format in two forms: (1) cheap to compute, (2) clear and easy to
 understand.
 
@@ -40,7 +40,7 @@ To reach easy accessibility in various formats, the following are necessary:
 - [ ] An interlinear format in two forms: (1) small in file size and (2) clear
   and easy to understand.
 - [x] A tool to translate the original text to the target language as a desktop
-  application and web application. Ready to use [source code
+  application and web application. Now ready to use: [source code
   repository](https://github.com/benihyangbaik/interlinear-bible-simple-editor),
   [web application](https://ibse.benihyangbaik.com).
 - [ ] A tool to display this format in a web application.
