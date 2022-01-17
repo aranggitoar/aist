@@ -98,7 +98,7 @@ Para alcançar fácil acessibilidade em vários formatos, são necessários:
 - A ferramenta de tradução está pronta para uso, mas ainda faltam alguns
   recursos.
 - O formato interlinear computacionalmente barato está pronto para uso, [confira
-  acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#computationalmente-barato) e o
+  acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#computacionalmente-barato) e o
   livro de Gênesis está sendo traduzido.
 - O texto bizantino está em processo de conversão, das versões *analisada* e
   *CSV-Unicode* no repositório já mencionado
