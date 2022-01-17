@@ -11,7 +11,7 @@ AIST dapat dikutip, digunakan secara bebas, dengan memberikan atribusi kepada
 
 ## **Alkitab Interlinear dalam Format Digital**
 Pada waktu yang sama, karena belum ada standar format digital tertentu untuk
-Alkitab interlinear, ASTI juga menyediakan dan menyebarluaskan penggunaan
+Alkitab interlinear, AIST juga menyediakan dan menyebarluaskan penggunaan
 sebuah format digital Alkitab interlinear dalam dua bentuk: (1) *ringan secara
 komputasi*, (2) *jelas dan mudah dimengerti*.
 

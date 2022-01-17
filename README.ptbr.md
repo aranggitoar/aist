@@ -1,10 +1,10 @@
 # **Bíblia de Código Aberto Interlinear (Grego/Hebraico-Indonésio)**
 *Read in [Indonesian](https://github.com/benihyangbaik/asti#readme), [English](https://github.com/benihyangbaik/asti/blob/main/README.en.md), [Brazillian Portuguese](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md).*
 
-*Bíblia de Código Aberto Interlinear* (*Alkitab Sumber Terbuka Interlinear*,
-**ASTI**) é um projeto organizado por Benih Yang Baik para facilitar o acesso e
-fornecer acesso gratuito a Bíblia Interlinear de língua indonésia para todas as
-congregações de língua indonésia.
+*Bíblia de Código Aberto Interlinear* (*Alkitab Interlinear Sumber Terbuka
+Interlinear*, **AIST**) é um projeto organizado por Benih Yang Baik para
+facilitar o acesso e fornecer acesso gratuito a Bíblia Interlinear de língua
+indonésia para todas as congregações de língua indonésia.
 
 AIST pode ser citado, usado livremente, com atribuição a [Benih Yang
 Baik](https://benihyangbaik.com).
@@ -12,7 +12,7 @@ Baik](https://benihyangbaik.com).
 
 ## **Bíblia Interlinear em Formato Digital**
 Ao mesmo tempo, porque não existe um padrão conhecido para um formato digital de
-Bíblia interlinear, ASTI também fornece e propague o uso de uma Bíblia interlinear
+Bíblia interlinear, AIST também fornece e propague o uso de uma Bíblia interlinear
 formato digital em duas formas: (1) *computacionalmente barato*, (2) *claro e fácil de
 compreender*.
 

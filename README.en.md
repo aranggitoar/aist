@@ -12,7 +12,7 @@ Baik](https://benihyangbaik.com).
 
 ## **Interlinear Bible in Digital Format**
 At the same time, because there exist no known standard for a digital format of
-interlinear Bible, ASTI also provides and spread the use of a interlinear Bible
+interlinear Bible, AIST also provides and spread the use of a interlinear Bible
 digital format in two forms: (1) *cheap to compute*, (2) *clear and easy to
 understand*.
 
