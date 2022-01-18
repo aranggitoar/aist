@@ -63,9 +63,9 @@ One more data point in from of the original language data point. Example:
 
 ## **Source**
 1. Greek Text: [Byzantine Majority Greek New
-   Testament](https://github/byztxt/byzantine-majority-text) by Robinson and
+   Testament](https://github.com/byztxt/byzantine-majority-text) by Robinson and
    Pierpoint.
-2. Hebrew Text: OSHB by Open Scriptures, Leningrad Westminster Codex.
+2. Hebrew Text: OSHB by Open Scriptures, Westminster Leningrad Codex.
 
 
 ## **Purpose**

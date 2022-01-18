@@ -63,10 +63,10 @@ poin data bahasa asli. Contoh:
 
 ## **Sumber**
 1. Teks Yunani: [Perjanjian Baru Yunani Mayoritas
-   Bizantium](https://github/byztxt/byzantine-majority-text) (Byzantine
+   Bizantium](https://github.com/byztxt/byzantine-majority-text) (Byzantine
    Majority Greek New Testament) oleh Robinson dan Pierpoint.
 2. Teks Ibrani: OSHB oleh Open Scriptures, Kodeks Leningrad Westminster
-   (Leningrad Westminster Codex).
+   (Westminster Leningrad Codex).
 
 
 ## **Tujuan**

@@ -63,10 +63,10 @@ frente do ponto de dados do idioma nativo. Exemplo:
 
 ## **Fonte**
 1. Texto Grego: [Maioria Bizantina Grego Novo
-   Testamento](https://github/byztxt/byzantine-majority-text) (Byzantine
+   Testamento](https://github.com/byztxt/byzantine-majority-text) (Byzantine
    Majority Greek New Testament) por Robinson e Pierpoint.
 2. Texto Hebraico: OSHB por Open Scriptures, Códice de Leningrado Westminster
-   (Leningrad Westminster Codex).
+   (Westminster Leningrad Codex).
 
 
 ## **Propósito**
