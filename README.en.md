@@ -99,7 +99,9 @@ To reach easy accessibility in various formats, the following are necessary:
 - The cheap to compute interlinear format is ready to use, [see
   above](https://github.com/benihyangbaik/asti/blob/main/README.en.md#cheap-to-compute)
   and the book of Genesis is being translated.
-- The Byzantine text is in the process of being converted, from the *parsed*
+- ~~The Byzantine text is in the process of being converted, from the *parsed*
   and *CSV-Unicode* versions in the already mentioned repository
   [above](https://github.com/benihyangbaik/asti/blob/main/README.en.md#source).
-  It is on hold until the middle of February 2022, except someone contributes.
+  It is on hold until the middle of February 2022, except someone
+  contributes.~~ The Byzantine text has been converted and ready to be
+  translated, [see here](https://github.com/benihyangbaik/interlinear-bible-simple-editor/blob/main/data/byzmt.json).

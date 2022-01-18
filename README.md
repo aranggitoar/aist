@@ -100,10 +100,12 @@ Untuk mencapai kemudahan akses dalam berbagai format, diperlukan hal-hal berikut
 - Format interlinear yang ringan secara komputasi sudah siap digunakan, [cek
   atas](https://github.com/benihyangbaik/asti#ringan-secara-komputasi)
   dan Kitab Kejadian sedang diterjemahkan.
-- Teks Byzantine sedang dalam proses konversi, dari versi *parsed* dan
+- ~~Teks Byzantine sedang dalam proses konversi, dari versi *parsed* dan
   *CSV-Unicode* dalam repositori yang sudah disebutkan [di
   atas](https://github.com/benihyangbaik/asti#sumber). Ini ditunda hingga
-  pertengahan Februari 2022, kecuali seseorang berkontribusi.
+  pertengahan Februari 2022, kecuali seseorang berkontribusi.~~ Teks Byzantine
+  telah selesai di konversi dan siap diterjemahkan, [lihat
+  disini](https://github.com/benihyangbaik/interlinear-bible-simple-editor/blob/main/data/byzmt.json).
 
 
 ## **Kamus Bahasa Teknis**

@@ -100,7 +100,10 @@ Para alcançar fácil acessibilidade em vários formatos, são necessários:
 - O formato interlinear computacionalmente barato está pronto para uso, [confira
   acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#computacionalmente-barato) e o
   livro de Gênesis está sendo traduzido.
-- O texto bizantino está em processo de conversão, das versões *analisada* e
+- ~~O texto bizantino está em processo de conversão, das versões *analisada* e
   *CSV-Unicode* no repositório já mencionado
-  [acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#fonte). Isso foi adiado até
-  meados de fevereiro de 2022, a menos que alguém contribuísse.
+  [acima](https://github.com/benihyangbaik/asti/blob/main/README.ptbr.md#fonte).
+  Isso foi adiado até meados de fevereiro de 2022, a menos que alguém
+  contribuísse.~~ O texto bizantino foi convertido e pronto para ser traduzido,
+  [veja
+  aqui](https://github.com/benihyangbaik/interlinear-bible-simple-editor/blob/main/data/byzmt.json).
